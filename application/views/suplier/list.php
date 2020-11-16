@@ -60,7 +60,7 @@
             </div>
             <div class="row">
             <div class="col-md-12 form-group">
-                <label for="suplier">Nama Suplier</label>
+                <label for="suplier">Nama Pasien</label>
                 <input type="suplier" name="suplier" id="suplier" class="form-control " required>
             </div>
             <div class="col-md-12 form-group">
@@ -96,7 +96,7 @@
             </div>
             <div class="row">
             <div class="col-md-12 form-group">
-                <label for="alamat">Alamat Suplier</label>
+                <label for="alamat">Alamat Pasien</label>
                 <textarea name="alamat" id="alamat" class="form-control " cols="30" rows="8" required></textarea>
             </div>
             <div class="col-md-12 form-group">

@@ -16,7 +16,7 @@
             </div>
             <div class="modal-footer">
                 <a data-dismiss="modal" href="#">Batal</a>
-                <a href="<?= base_url('admin/peternak/hapus_klp_ternak/'.$kd_alternatif) ?>">Hapus</a>
+                <a href="<?= base_url('admin/pasien/hapus_klp_ternak/'.$kd_alternatif) ?>">Hapus</a>
             </div>
         </div>
     </div>

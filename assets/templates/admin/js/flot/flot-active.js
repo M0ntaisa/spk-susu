@@ -31,19 +31,62 @@
                         grid: {
                             hoverable: true,
                             clickable: true,
-                            tickColor: "#fff",
+                            tickColor: "#d5d5d5",
                             borderWidth: 1,
-                            color: '#fff'
+                            color: '#d5d5d5'
                         },
-                        colors: ["#03a9f4", "#000"],
-                        yaxis: {tickLength:0}, 
-						xaxis: {tickLength:0},
+                        colors: ["#03a9f4", "#303030"],
+                        xaxis:{
+                        },
+                        yaxis: {
+                            ticks: 4
+                        },
                         tooltip: false
                     }
             );
 
+		 var doughnutData = {
+                labels: ["Logo","Banner","Card" ],
+                datasets: [{
+                    data: [300,50,100],
+                    backgroundColor: ["#a3e1d4","#dedede","#9CC3DA"]
+                }]
+            } ;
 
-			
+
+            var doughnutOptions = {
+                responsive: false,
+                legend: {
+                    display: false
+                }
+            };
+
+
+            var ctx4 = document.getElementById("doughnutChart").getContext("2d");
+            new Chart(ctx4, {type: 'doughnut', data: doughnutData, options:doughnutOptions});
+
+            var doughnutData = {
+                labels: ["App","Software","Game" ],
+                datasets: [{
+                    data: [70,27,85],
+                    backgroundColor: ["#a3e1d4","#dedede","#9CC3DA"]
+                }]
+            } ;
+
+
+            var doughnutOptions = {
+                responsive: false,
+                legend: {
+                    display: false
+                }
+            };
+
+
+            var ctx4 = document.getElementById("doughnutChart2").getContext("2d");
+            new Chart(ctx4, {type: 'doughnut', data: doughnutData, options:doughnutOptions});
+
+
+
 
 
  

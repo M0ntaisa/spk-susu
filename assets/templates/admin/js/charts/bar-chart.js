@@ -33,22 +33,9 @@
 		},
 		options: {
 			scales: {
-				xAxes: [{
-					ticks: {
-						autoSkip: false,
-						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
-					}
-				}],
 				yAxes: [{
 					ticks: {
-						autoSkip: false,
-						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
+						beginAtZero:true
 					}
 				}]
 			}
@@ -112,26 +99,6 @@
 			title: {
 				display: true,
 				text: 'Bar Chart Vertical'
-			},
-			scales: {
-				xAxes: [{
-					ticks: {
-						autoSkip: false,
-						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
-					}
-				}],
-				yAxes: [{
-					ticks: {
-						autoSkip: false,
-						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
-					}
-				}]
 			}
 		}
 	});
@@ -193,26 +160,6 @@
 			title: {
 				display: true,
 				text: 'Bar Chart horizontal'
-			},
-			scales: {
-				xAxes: [{
-					ticks: {
-						autoSkip: false,
-						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
-					}
-				}],
-				yAxes: [{
-					ticks: {
-						autoSkip: false,
-						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
-					}
-				}]
 			}
 		}
 	});
@@ -336,22 +283,10 @@
 			responsive: true,
 			scales: {
 				xAxes: [{
-					ticks: {
-						autoSkip: false,
-						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
-					}
+					stacked: true,
 				}],
 				yAxes: [{
-					ticks: {
-						autoSkip: false,
-						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
-					}
+					stacked: true
 				}]
 			}
 		}

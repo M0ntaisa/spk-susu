@@ -1,12 +1,12 @@
 /* Color Switcher */
-.sidebarmain.ec-colorswitcher  { left: 0px; }
+.sidebarmain.ec-colorswitcher  { left: -260px; }
 .ec-colorswitcher {
     padding: 0px;
     width: 260px;
     background: #fcfcfc;
     z-index: 99999999999;
     position: fixed;
-    left: -260px;
+    left: 0px;
     top: 10%;
 
     -webkit-transition: all 0.4s ease-in-out;

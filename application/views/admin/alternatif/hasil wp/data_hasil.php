@@ -126,7 +126,7 @@
                             <div class="sparkline8-list shadow-reset">
                                 <div class="sparkline8-hd">
                                     <div class="main-sparkline8-hd">
-                                        <h1>Suplier yang Dipilih</h1>
+                                        <h1>Pasien yang Dipilih</h1>
                                         <div class="sparkline8-outline-icon">
                                             <span class="sparkline8-collapse-link"><i class="fa fa-chevron-up"></i></span>
                                             <span><i class="fa fa-wrench"></i></span>
@@ -140,7 +140,7 @@
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
-                                                    <th>Nama Suplier</th>
+                                                    <th>Nama Pasien</th>
                                                     <th style="text-align:center;">Vektor S</th>
                                                     <th style="text-align:center;">Vektor V</th>
                                                     <th style="text-align:center;">Peringkat</th>

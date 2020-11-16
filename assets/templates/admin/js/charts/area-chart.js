@@ -40,18 +40,6 @@
 					ticks: {
 						autoSkip: false,
 						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
-					}
-				}],
-				yAxes: [{
-					ticks: {
-						autoSkip: false,
-						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
 					}
 				}]
 			}
@@ -97,18 +85,6 @@
 					ticks: {
 						autoSkip: false,
 						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
-					}
-				}],
-				yAxes: [{
-					ticks: {
-						autoSkip: false,
-						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
 					}
 				}]
 			}
@@ -153,18 +129,6 @@
 					ticks: {
 						autoSkip: false,
 						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
-					}
-				}],
-				yAxes: [{
-					ticks: {
-						autoSkip: false,
-						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
 					}
 				}]
 			}
@@ -211,18 +175,6 @@
 					ticks: {
 						autoSkip: false,
 						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
-					}
-				}],
-				yAxes: [{
-					ticks: {
-						autoSkip: false,
-						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
 					}
 				}]
 			}
@@ -265,23 +217,8 @@
 				}
 			},
 			scales: {
-				xAxes: [{
-					ticks: {
-						autoSkip: false,
-						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
-					}
-				}],
 				yAxes: [{
-					ticks: {
-						autoSkip: false,
-						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
-					}
+					stacked: true
 				}]
 			},
 			plugins: {
@@ -323,21 +260,17 @@
 			},
 			scales: {
 				xAxes: [{
-					ticks: {
-						autoSkip: false,
-						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
+					display: true,
+					scaleLabel: {
+						display: true,
+						labelString: 'Month'
 					}
 				}],
 				yAxes: [{
-					ticks: {
-						autoSkip: false,
-						maxRotation: 0
-					},
-					ticks: {
-					  fontColor: "#fff", // this here
+					display: true,
+					scaleLabel: {
+						display: true,
+						labelString: 'Value'
 					}
 				}]
 			},

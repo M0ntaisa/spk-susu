@@ -21,7 +21,7 @@ class Kriteria extends CI_Controller {
         
         $data = array(  
             'title'     =>      'Kriteria | Administrator',
-            'subtitle'  =>      'Data Kriteria',
+            'subtitle'  =>      'Kriteria',
             'kriteria'  =>      $kriteria,
             'isi'       =>      'admin/kriteria/data kriteria/list' 
         );

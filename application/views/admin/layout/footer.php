@@ -50,29 +50,10 @@
     <script src="<?= base_url(); ?>assets/templates/admin/js/counterup/jquery.counterup.min.js"></script>
     <script src="<?= base_url(); ?>assets/templates/admin/js/counterup/waypoints.min.js"></script>
     <script src="<?= base_url(); ?>assets/templates/admin/js/counterup/counterup-active.js"></script>
-    <!-- peity JS
-		============================================ -->
-    <script src="<?= base_url(); ?>assets/templates/admin/js/peity/jquery.peity.min.js"></script>
-    <script src="<?= base_url(); ?>assets/templates/admin/js/peity/peity-active.js"></script>
     <!-- sparkline JS
 		============================================ -->
     <script src="<?= base_url(); ?>assets/templates/admin/js/sparkline/jquery.sparkline.min.js"></script>
     <script src="<?= base_url(); ?>assets/templates/admin/js/sparkline/sparkline-active.js"></script>
-    <!-- modal JS
-		============================================ -->
-    <script src="<?= base_url(); ?>assets/templates/admin/js/modal-active.js"></script>
-    <!-- select2 JS
-		============================================ -->
-    <script src="<?= base_url(); ?>assets/templates/admin/js/select2/select2.full.min.js"></script>
-    <script src="<?= base_url(); ?>assets/templates/admin/js/select2/select2-active.js"></script>
-    <!-- knob JS
-		============================================ -->
-    <script src="<?= base_url(); ?>assets/templates/admin/js/js/knob/jquery.knob.js"></script>
-    <script src="<?= base_url(); ?>assets/templates/admin/js/js/knob/knob-active.js"></script>
-    <!-- icheck JS
-		============================================ -->
-    <script src="<?= base_url(); ?>assets/templates/admin/js/icheck/icheck.min.js"></script>
-    <script src="<?= base_url(); ?>assets/templates/admin/js/icheck/icheck-active.js"></script>
     <!-- flot JS
 		============================================ -->
     <script src="<?= base_url(); ?>assets/templates/admin/js/flot/jquery.flot.js"></script>
@@ -82,23 +63,13 @@
     <script src="<?= base_url(); ?>assets/templates/admin/js/flot/jquery.flot.pie.js"></script>
     <script src="<?= base_url(); ?>assets/templates/admin/js/flot/Chart.min.js"></script>
     <script src="<?= base_url(); ?>assets/templates/admin/js/flot/flot-active.js"></script>
-    <!-- data table JS
+    <!-- switcher JS
 		============================================ -->
-    <script src="<?= base_url(); ?>assets/templates/admin/js/data-table/bootstrap-table.js"></script>
-    <script src="<?= base_url(); ?>assets/templates/admin/js/data-table/tableExport.js"></script>
-    <script src="<?= base_url(); ?>assets/templates/admin/js/data-table/data-table-active.js"></script>
-    <script src="<?= base_url(); ?>assets/templates/admin/js/data-table/bootstrap-table-editable.js"></script>
-    <script src="<?= base_url(); ?>assets/templates/admin/js/data-table/bootstrap-editable.js"></script>
-    <script src="<?= base_url(); ?>assets/templates/admin/js/data-table/bootstrap-table-resizable.js"></script>
-    <script src="<?= base_url(); ?>assets/templates/admin/js/data-table/colResizable-1.5.source.js"></script>
-    <script src="<?= base_url(); ?>assets/templates/admin/js/data-table/bootstrap-table-export.js"></script>
+    <script src="<?= base_url(); ?>assets/templates/admin/js/switcher/styleswitch.js"></script>
+    <script src="<?= base_url(); ?>assets/templates/admin/js/switcher/switch-active.js"></script>
     <!-- main JS
 		============================================ -->
     <script src="<?= base_url(); ?>assets/templates/admin/js/main.js"></script>
-    <!-- pdf JS
-		============================================ -->
-    <script src="<?= base_url(); ?>assets/templates/admin/js/pdf/jquery.media.js"></script>
-    <script src="<?= base_url(); ?>assets/templates/admin/js/pdf/pdf-active.js"></script>
 </body>
 
 </html>

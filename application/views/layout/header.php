@@ -36,7 +36,7 @@
                     <a class="nav-link <?= $about ?>" href="<?= base_url('about') ?>">About</a>
                 </li>
                 <li class="nav-item" style="padding-right:30px;">
-                    <a class="nav-link <?= $suplier ?>" href="<?= base_url('Suplier') ?>">Suplier</a>
+                    <a class="nav-link <?= $suplier ?>" href="<?= base_url('Pasien') ?>">Pasien</a>
                 </li>
                 <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>

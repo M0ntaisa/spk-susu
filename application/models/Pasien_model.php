@@ -2,10 +2,10 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Peternak_model extends CI_Model {
+class Pasien_model extends CI_Model {
 
     //Fungsi Lihat Data Alternatif
-    public function getPeternak() {
+    public function getPasien() {
         return $this->db->get('tb_alternatif')->result_array();
     }
 
@@ -38,7 +38,7 @@ class Peternak_model extends CI_Model {
         } else {
             // set flashdata
             $this->session->set_flashdata('gagal', 'Data Kelompok Ternak gagal ditambahkan.');
-            redirect(base_url('admin/peternak'), 'refresh');
+            redirect(base_url('admin/pasien'), 'refresh');
         }
         
         
@@ -52,4 +52,4 @@ class Peternak_model extends CI_Model {
 
 }
 
-/* End of file Peternak_model.php */
+/* End of file Pasien_model.php */

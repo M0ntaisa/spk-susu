@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Peternak extends CI_Controller {
+class Pasien extends CI_Controller {
 
     public function __construct()
     {
@@ -11,28 +11,28 @@ class Peternak extends CI_Controller {
         // proteksi halaman
         $this->auth->cek_login();
         // load model
-        $this->load->model('Peternak_model');
+        $this->load->model('Pasien_model');
         $this->load->model('Subkriteria_model');
     }
 
     public function index()
     {   
-        // get data peternak
-        $peternak = $this->Peternak_model->getPeternak();
+        // get data pasien
+        $pasien = $this->Pasien_model->getPasien();
         $st_kelompok = $this->Subkriteria_model->getSubkritEachKrit('KRT001');
         $st_bantuan = $this->Subkriteria_model->getSubkritEachKrit('KRT003');
         $sys_pemeliharaan = $this->Subkriteria_model->getSubkritEachKrit('KRT004');
         $pel_kesehatan = $this->Subkriteria_model->getSubkritEachKrit('KRT005');
         
         $data = array(  
-            'title'     =>      'Peternak | Administrator',
-            'subtitle'  =>      'Peternak',
-            'peternak'  =>      $peternak,
+            'title'     =>      'Pasien | Administrator',
+            'subtitle'  =>      'Pasien',
+            'pasien'  =>      $pasien,
             'st_kelompok'  =>      $st_kelompok,
             'st_bantuan'  =>      $st_bantuan,
             'sys_pemeliharaan'  =>      $sys_pemeliharaan,
             'pel_kesehatan'  =>      $pel_kesehatan,
-            'isi'       =>      'admin/peternak/list' 
+            'isi'       =>      'admin/pasien/list' 
         );
 
         $this->load->view('admin/layout/wrapper', $data, FALSE);
@@ -65,11 +65,11 @@ class Peternak extends CI_Controller {
         );
         
         // tambah data ke table suplier
-        $this->Peternak_model->tambahKelpTernak($data, $kd_subkriteria);
+        $this->Pasien_model->tambahKelpTernak($data, $kd_subkriteria);
 
         // set flashdata
         $this->session->set_flashdata('sukses', 'Data Kelompok Ternak telah ditambahkan.');
-        redirect(base_url('admin/peternak'), 'refresh');
+        redirect(base_url('admin/pasien'), 'refresh');
         
         
         
@@ -99,19 +99,19 @@ class Peternak extends CI_Controller {
             'Telepon'       =>  $this->input->post('telepon'),
             'sertifikat'       =>  $this->input->post('sertifi_ternak')
         );
-        $this->Suplier_model->editSuplier($data);
+        $this->Pasien_model->editPasien($data);
 
         // hapus transmat
-        $this->Suplier_model->hapusTransmat($data['kd_suplier']);
+        $this->Pasien_model->hapusTransmat($data['kd_suplier']);
         // edit data ke table transmat
         for ($i=0; $i < count($arr_mat) ; $i++) { 
 
-            $this->Suplier_model->tambahTransmat($data['kd_suplier'],$arr_mat[$i]);
+            $this->Pasien_model->tambahTransmat($data['kd_suplier'],$arr_mat[$i]);
             
         }
         // echo "keluar pak eko";exit;
         // set flashdata
-        $this->session->set_flashdata('sukses', 'Data Suplier Telah Diedit');
+        $this->session->set_flashdata('sukses', 'Data Pasien Telah Diedit');
         redirect(base_url('admin/suplier'));
         
 
@@ -121,18 +121,18 @@ class Peternak extends CI_Controller {
     public function hapus_klp_ternak($kd_alternatif)
     {
         // proses hapus gambar
-        // $suplier = $this->Suplier_model->getSuratUsaha($kd_suplier);
+        // $suplier = $this->Pasien_model->getSuratUsaha($kd_suplier);
         // $image_path = realpath(APPPATH . '../assets/upload/image/surat_usaha');
         // unlink("$image_path/".$suplier[0]['surat_usaha']);
         // unlink("$image_path/thumbs/".$suplier[0]['surat_usaha']);
 
         // proses hapus suplier
-        $this->Peternak_model->hapusKlpTernak($kd_alternatif);
+        $this->Pasien_model->hapusKlpTernak($kd_alternatif);
         $this->session->set_flashdata('sukses', 'Data Kelompok Ternak Telah Dihapus');
-        redirect(base_url('admin/peternak'), 'refresh');
+        redirect(base_url('admin/pasien'), 'refresh');
         
     }
 
 }
 
-/* End of file Peternak.php */
+/* End of file Pasien.php */

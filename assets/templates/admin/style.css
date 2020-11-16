@@ -25,7 +25,6 @@
 /*  1.  Theme default CSS
 /*----------------------------------------*/
 html, body {font-family: 'Open Sans', sans-serif;font-weight:400;background: #03a9f0}
-html, body.materialdesign {background: #ebebeb}
 .floatleft {float:left}
 .floatright {float:right}
 .alignleft {float:left;margin-right:15px;margin-bottom: 15px}
@@ -120,7 +119,7 @@ padding: 0
     border-radius: 4px;
 }
 .shadow-reset{
-	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	box-shadow: 0 0 20px rgba(0,0,0,.3);
 }
 /*----------------------------------------*/
 /*  2.  Header top Customize CSS
@@ -134,7 +133,7 @@ padding: 0
 	margin-left:4px;
 }
 .header-top-menu .navbar-nav>li>a:hover{
-	color: #333;
+	color: #03a9f4;
 }
 .header-top-menu .navbar-nav>li .dropdown-menu a{
 	padding: 10px 20px;
@@ -142,7 +141,7 @@ padding: 0
 	color: #fff;
 }
 .header-top-menu .navbar-nav>li .dropdown-menu a:hover{
-	background:#2b2a2a;
+	background:#03a9f4;
 }
 .header-top-menu .navbar-nav>li .dropdown-menu{
 	border: 0px solid #ccc; 
@@ -165,7 +164,7 @@ padding: 0
     background-color: transparent;
 }
 .header-right-info .nav.custon-set-tab>li>a:focus, .header-right-info .nav.custon-set-tab>li>a:hover, .header-right-info .nav.custon-set-tab>li>a:active {
-	color:#303030;
+	color:#03a9f4;
 }
 .header-right-info .nav.custon-set-tab>li>a {
 	color:#fff;
@@ -265,7 +264,7 @@ padding: 0
    margin-right:10px;
 }
 .header-right-info ul.header-right-menu li .dropdown-header-top.author-log li a:hover, .header-right-info ul.header-right-menu li .dropdown-header-top.author-log li a:focus{
-   background:#2b2a2a;
+   background:#03a9f4;
 }
 .header-right-info ul.header-right-menu li .author-message-top{
    left:-133px;
@@ -311,8 +310,8 @@ padding: 0
 	width:5px;
 	background:#03a9f4;
 	border-radius:50%;
-	top: -5px;
-    right: 0px;
+	top: 0px;
+    right: -3px;
 }
 .indicator-ms{
 	position:absolute;
@@ -320,8 +319,8 @@ padding: 0
 	width:5px;
 	background:#03a9f4;
 	border-radius:50%;
-	top: -5px;
-    right: -7px;
+	top: -1px;
+    right: -8px;
 }
 .header-right-info .admin-name{
 	display: inline-block;
@@ -406,10 +405,10 @@ ul.message-menu li .message-content p, ul.notification-menu li .notification-con
 	font-size:14px;
 }
 .header-right-info ul.header-right-menu li.open > a{
-	color:#303030;
+	color:#03a9f4;
 }
 .header-top-menu .navbar-nav>li.open > a{
-	color:#333;
+	color:#03a9f4;
 }
 .header-right-info ul.header-right-menu li .admintab-wrap.menu-setting-wrap.menu-setting-wrap-bg.dropdown-menu {
     background:#343434;
@@ -1125,7 +1124,7 @@ ul.comment-action-st li a{
 }
 .income-rate-total h3{
 	color:#303030;
-	font-size:23px;
+	font-size:25px;
 }
 .income-range p{
 	font-size:14px;
@@ -3476,591 +3475,4 @@ ul.profile-contact-menu {
 }
 .inbox-bt-mg{
     margin-bottom:15px;
-}
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
-.container.header-top-fx {
-    position: fixed;
-    z-index: 999999999;
-	background: #303030;
-}
-.header-top-area {
-    height: 60px;
-}
-.fixed-header-top{
-	position: fixed;
-    background: #303030;
-    z-index: 999;
-    left: 200px;
-    right: 0;
-    top: 0;
-    margin: 0 auto;
-	transition: all 0.3s;
-}
-.mini-navbar .fixed-header-top{
-    left: 80px;
-	transition: all 0.3s;
-}
-.mini-navbar .content-inner-all {
-    margin-left: 80px;
-	transition: all 0.3s;
-}
-.content-inner-all {
-    margin-left: 200px;
-	transition: all 0.3s;
-}
-.header-drl-controller-btn.btn-info{
-	background-color: #2b2a2a;
-	border-color: #2b2a2a;
-	outline:none;
-}
-.header-drl-controller-btn.btn-info:active:focus, .btn-info:active:hover{
-	background-color: #303030;
-	border-color: #2b2a2a;
-	outline:none;
-}
-.content-inner-all ul.message-list-menu li .message-info{
-	width:209px;
-}
-.left-sidebar-pro {
-    z-index: 9999;
-    width: 200px;
-	background: #303030;
-	height:100%;
-}
-#sidebar {
-    min-width: 200px;
-    background: #303030;
-    color: #fff;
-	position:fixed;
-    transition: all 0.3s;
-	z-index:999;
-	height:100%;
-}
-#sidebar.active {
-    min-width: 80px;
-    max-width: 80px;
-    text-align: center;
-}
-#sidebar.active .sidebar-header h3, #sidebar.active .CTAs {
-    display:none;
-}
-
-#sidebar.active .sidebar-header strong {
-    display: block;
-}
-
-#sidebar.active ul li .sidebar-right-icon {
-    display:none;
-}
-.bar-button-pro {
-    margin: 13px 0px;
-}
-
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #393939;
-}
-
-#sidebar .sidebar-header strong {
-    display: none;
-    font-size: 1.8em;
-}
-
-.sidebar-header {
-    text-align: center;
-}
-.sidebar-header h3 {
-    font-size: 20px;
-    color: #fff;
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-.sidebar-header img {
-   border-radius:50%;
-   width:50%;
-}
-#sidebar.active .sidebar-header img{
-	display:none;
-}
-#sidebar.active .sidebar-header h3{
-	display:none;
-}
-#sidebar.active .sidebar-header p{
-	display:none;
-}
-#sidebar ul li a .sidebar-right-icon{
-	float: right;
-}
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro{
-	width:100%;
-}
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li{
-	display:block;
-	float:none;
-	position:relative;
-}
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .left-menu-dropdown{
-	position:absolute;
-	left:0px;
-	top:0px;
-	opacity:0;
-	width:180px;
-	border-radius:0;
-	border:0px solid #fff;
-	box-shadow:none;
-	background:#2b2a2a;
-}
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .left-menu-dropdown a:hover{
-	padding:10px 30px;
-	transition:all .4s ease 0s;
-}
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown{
-	opacity:1;
-	left:200px;
-	z-index:9999;
-}
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown.chart-left-menu-std{
-	top:-100px;
-}
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown.form-left-menu-std{
-	top:-100px;
-}
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown.apps-left-menu-std{
-	top:-180px;
-}
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown.pages-left-menu-std{
-	top:-270px;
-}
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a{
-	display:block;
-	padding:10px 20px;
-	color:#fff;
-	transition:all .4s ease 0s;
-}
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:hover, .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:focus, .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:active, .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:visited{
-	background:#2b2a2a;
-	color:#fff;
-}
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .indicator-right-menu{
-	float: right;
-}
-#sidebar.active .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown {
-    left: 80px;
-}
-#sidebar.active .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .mini-dn {
-    display:none;
-}
-#sidebar.active .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .big-icon {
-    font-size:20px;
-}
-#sidebar.active .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li > a {
-    padding: 20px 20px;
-}
-
-/* ---------------------------------------------------
-    Material Design
------------------------------------------------------ */
-.darklayout .welcome-wrapper, .darklayout .dashboard-line-chart, .darklayout .dashone-adminprowrap, .darklayout  .sparkline-content, .darklayout  .sparkline7-graph, .darklayout  .sparkline8-graph, .darklayout  .sparkline9-graph, .darklayout  .sparkline10-graph, .darklayout  .sparkline11-graph, .darklayout  .sparkline12-graph, .darklayout  .sparkline13-graph, .darklayout  .sparkline14-graph, .darklayout  .sparkline15-graph, .darklayout  .sparkline16-graph, .darklayout .income-title, .darklayout .income-dashone-pro, .darklayout .dashtwo-order-list, .darklayout .tab-content-details, .darklayout .admin-pro-accordion-wrap, .darklayout .smart-sparkline-list, .darklayout .login-bg{
-	background: #393939;
-}
-.darklayout .flot-tick-label.tickLabel, .darklayout .legend > div{
-	color: #393939;
-}
-.darklayout .legend > div{
-	background: #393939 !important;
-}
-.darklayout .welcome-adminpro-title h1, .darklayout .welcome-adminpro-title p, .darklayout .content-inner-all ul.message-list-menu li .message-info, .darklayout .breadcome-heading h2, .darklayout ul.breadcome-menu li a, .darklayout ul.breadcome-menu li, .darklayout ul.message-list-menu li .message-time, .darklayout .linechart-dash-rate h2, .darklayout .linechart-dash-rate p, .darklayout .dash-adminpro-project-title h2, .darklayout .dash-adminpro-project-title p, .darklayout .project-dashone-phara p, .darklayout .dashone-doughnut h3, .darklayout .dashone-doughnut h3, .darklayout .main-spark-hd h1, .darklayout .smart-main-spark-hd h1, .darklayout .main-spark7-hd h1, .darklayout .main-sparkline8-hd h1, .darklayout .main-sparkline9-hd h1, .darklayout .main-sparkline10-hd h1, .darklayout .main-sparkline11-hd h1, .darklayout .main-sparkline12-hd h1, .darklayout .main-sparkline13-hd h1, .darklayout .main-sparkline14-hd h1, .darklayout .main-sparkline15-hd h1, .darklayout .main-sparkline16-hd h1, .darklayout .outline-icon span, .darklayout .smart-outline-icon span, .darklayout .sparkline7-outline-icon span, .darklayout .sparkline8-outline-icon span, .darklayout .sparkline9-outline-icon span, .darklayout .sparkline10-outline-icon span, .darklayout .sparkline11-outline-icon span, .darklayout .sparkline12-outline-icon span, .darklayout .sparkline13-outline-icon span, .darklayout .sparkline14-outline-icon span, .darklayout .sparkline15-outline-icon span, .darklayout .sparkline16-outline-icon span, .darklayout .dashone-bar-heading h2, .darklayout  .timeline-heading-admin h1, .darklayout .sparkline-content p, .darklayout .timeline-content h3, .darklayout .icon-date-timeline i, .darklayout .dashone-comment .comment-content, .darklayout .dashone-comment .comment-clock, .darklayout .income-title h2, .darklayout .income-rate-total h3, .darklayout .income-range p, .darklayout .fixed-table-pagination .pagination-info, .darklayout .fixed-table-pagination .page-list, .darklayout .custom-datatable-overright table tbody tr td a, .darklayout .fixed-table-container thead th .th-inner, .darklayout .fixed-table-container tbody td .th-inner, .darklayout .flot-chart-dashtwo .legendLabel, .darklayout .tab-content-details h2, .darklayout .tab-content-details p, .darklayout .alert-title h2, .darklayout .alert-title p, .darklayout .login-title h1, .darklayout .login-input-head p{
-	color: #fff;
-}
-.darklayout .dashone-bar-heading a:hover, .darklayout .dashone-bar-small p{
-	color: #fff;
-}
-ul.breadcome-menu {
-    text-align: right;
-}
-.darklayout .breadcome-heading h2{
-	margin:0px;
-}
-.darklayout ul.message-list-menu li, .darklayout .comment-phara{
-	border-bottom: 1px solid #303030;
-}
-.darklayout .timeline-adminpro-cn, .darklayout .timeline-date-time-bd, .darklayout .timeline-date-time-bd:before, .darklayout .timeline-adminpro-cn:before{
-	border-left: 1px solid #303030;
-    border-bottom: 1px solid #303030;
-    border-top: 1px solid #303030;
-}
-.darklayout .timelinewrap-admin:hover .timeline-adminpro-cn, .darklayout .timelinewrap-admin:hover .timeline-date-time-bd{
-	background: #303030;
-}
-.materialdesign .breadcome-list{
-	margin-top:15px;
-	background: #fff;
-}
-.materialdesign .admin-dashone-data-table-area, .materialdesign .transition-world-area{
-	margin-bottom:15px;
-}
-.darklayout .sparkline-hd, .darklayout .smart-sparkline-hd, .darklayout .sparkline7-hd, .darklayout .sparkline8-hd, .darklayout .sparkline9-hd, .darklayout .sparkline10-hd, .darklayout .sparkline11-hd, .darklayout .sparkline12-hd, .darklayout .sparkline13-hd, .darklayout .sparkline14-hd, .darklayout .sparkline15-hd, .darklayout .sparkline16-hd {
-    background: #393939;
-    border-bottom: 1px solid #303030;
-}
-.darklayout .fixed-table-container{
-	border: 1px solid #303030;
-}
-.darklayout .bootstrap-table .table > thead > tr > th{
-	border-bottom: 1px solid #303030;
-}
-.darklayout .table-hover>tbody>tr:hover {
-    background-color: #303030;
-}
-.darklayout .table>tbody>tr>td, .darklayout .table>tbody>tr>th, .darklayout .table>tfoot>tr>td, .darklayout .table>tfoot>tr>th, .darklayout .table>thead>tr>td, .darklayout .table>thead>tr>th{
-	border-top: 1px solid #303030;
-	color: #fff;
-}
-.darklayout .fixed-table-container tbody td{
-	border-left: 1px solid #303030;
-}
-.darklayout .fixed-table-container thead th{
-	border-left: 1px solid #303030;
-}
-.darklayout .editable-click, .darklayout a.editable-click, .darklayout a.editable-click:hover, .darklayout .bootstrap-table .table{
-	border-bottom: dashed 1px #303030;
-}
-.darklayout .form-control{
-	background-color: #303030;
-    border: 1px solid #303030;
-	color: #fff;
-}
-.darklayout .btn-default{
-	color: #fff;
-    background-color: #303030;
-    border-color: #393939;
-}
-.darklayout .btn-default:focus{
-	outline:none;
-}
-.darklayout .form-control:focus{
-	box-shadow:none;
-}
-.darklayout .btn-default:active:focus, .darklayout .btn-default.active, .darklayout .btn-default:active, .darklayout .open>.dropdown-toggle.btn-default{
-	background-color: #303030;
-    border-color: #303030;
-	color: #fff;
-}
-.darklayout .dropdown-menu, .darklayout .fixed-table-container tbody .selected td, .darklayout .ui-datepicker{
-	background-color: #303030;
-}
-.darklayout .jstree-anchor:hover{
-	background-color: #303030;
-}
-.darklayout .dropdown-menu, .darklayout .pagination>li>a, .darklayout .pagination>li>span{
-	border: 1px solid #303030;
-}
-.darklayout .dropdown-menu>li>a:hover, .darklayout .custom-datatable-overright .card-view:hover, .darklayout ul.comment-action-st li a:hover{
-	background-color: #393939;
-}
-.darklayout .fixed-table-toolbar .columns label, .darklayout .dropdown-menu>li>a:focus, .darklayout .dropdown-menu>li>a:hover, .darklayout .dropdown-menu>li>a, .darklayout .custom-datatable-overright .card-view, .darklayout .ui-datepicker-title, .darklayout .ui-icon.ui-icon-circle-triangle-w, .darklayout .ui-icon.ui-icon-circle-triangle-e, .darklayout .ui-datepicker-calendar a, .darklayout .ui-datepicker-calendar span{
-	color: #fff;
-}
-.darklayout .pagination>li>a, .pagination>li>span{
-	color: #fff;
-	background-color: #303030;
-}
-.darklayout .ui-datepicker-calendar th{
-	text-align:center;
-}
-.darklayout .skill .progress .lead-content h3, .darklayout .skill .progress .lead-content p, .darklayout .daily-feed-content h4, .darklayout .daily-feed-content p, .darklayout .dashtwo-messages .dashtwo-messsage-title, .darklayout ul.comment-action-st li a{
-	color: #fff;
-}
-.darklayout .daily-feed-list {
-    border-bottom: 1px solid #303030;
-}
-.darklayout .daily-feed-content .message-feed-single{
-	background-color: #303030;
-	border: 1px solid #393939;
-}
-.darklayout .daily-feed-content .btn-white-like{
-	background-color: #303030;
-	border: 1px solid #393939;
-}
-.darklayout .income-title{
-	border: 1px solid #303030;
-}
-.darklayout .daily-feed-list.daily-feed-bbm{
-	border: 0px solid #393939;
-}
-.darklayout .daily-feed-content .btn-white-like:hover{
-	color: #fff;
-}
-.darklayout .custom-datatable-overright table tbody tr td{
-	padding-right: 0px !important;
-}
-.darklayout .comment-action-st, .darklayout .comment-action-st.in{
-	color: #fff;
-	background-color: #303030;
-	border: 1px solid #393939;
-}
-.darklayout .mg-b-15, .darklayout .darklayout-alert{
-	margin-bottom:15px;
-}
-.darklayout .adminpro-custon-design .admin-panel-content{
-	background-color: #353535;
-}
-.darklayout .knob-single input{
-	position: absolute;
-    top: 0px;
-    right: 34px;
-}
-.darklayout .chosen-container-single .chosen-single, .darklayout .multipleInput-container, .darklayout .multipleInput-container input{
-	color: #fff;
-	background-color: #303030;
-	border: 1px solid #303030;
-}
-.darklayout .chosen-container .chosen-drop{
-	background-color: #303030;
-}
-.darklayout .chosen-container-single .chosen-search input[type="text"]{
-	background-color: #393939;
-	color: #fff;
-}
-.darklayout .chosen-container .chosen-results, .darklayout .chosen-select-single label, .darklayout .select2-container--default .select2-selection--single .select2-selection__rendered, .darklayout .select2-results__option, .darklayout .select2-container--default .select2-selection--multiple .select2-selection__choice, .darklayout .input-mask-title{
-	color: #fff;
-}
-.darklayout .chosen-container .chosen-results .no-results, .darklayout  .ts-forms input[type="text"], .darklayout  .ts-forms input[type="password"], .darklayout  .ts-forms input[type="email"], .darklayout  .ts-forms input[type="search"], .darklayout  .ts-forms input[type="url"], .darklayout  .ts-forms textarea, .ts-forms select, .darklayout .sp-replacer, .darklayout .alert-wrap1, .darklayout .alert-wrap2, .darklayout .alert-icon, .darklayout .skill .progress, .darklayout .progress, .darklayout .nav>li>a:focus, .darklayout .nav>li>a:hover, .darklayout .inbox-email-menu-list .nav-tabs>li.active>a, .darklayout .inbox-email-menu-list .nav-tabs>li.active>a:focus, .darklayout .inbox-email-menu-list .nav-tabs>li.active>a:hover, .darklayout .panel-default>.panel-heading, .darklayout .custom-inbox-message .table-hover>tbody>tr.new-email, .darklayout .nav-tabs>li.active>a, .darklayout .nav-tabs>li.active>a:focus, .darklayout .nav-tabs>li.active>a:hover, .darklayout .project-list-action .btn-white, .darklayout .conversation-list .ctext-wrap{
-	background-color: #303030;
-}
-.darklayout .nav-tabs>li.active>a, .darklayout .nav-tabs>li.active>a:focus, .darklayout .nav-tabs>li.active>a:hover{
-	background-color: #303030;
-	border: 1px solid #303030;
-	color:#fff;
-}
-.darklayout .nav-tabs>li>a{
-	color:#fff;
-}
-.darklayout .nav-tabs>li>a:hover {
-    border-color: #303030 #303030 #303030;
-}
-.darklayout .nav-tabs {
-    border-bottom: 1px solid #303030;
-}
-.darklayout  .ts-forms input[type="text"], .darklayout  .ts-forms input[type="password"], .darklayout  .ts-forms input[type="email"], .darklayout  .ts-forms input[type="search"], .darklayout  .ts-forms input[type="url"], .darklayout  .ts-forms textarea, .ts-forms select, .darklayout .ts-forms .label, .darklayout .inbox-email-menu-list .nav-tabs li a, .darklayout .inbox-email-menu-list .nav-tabs li a:hover, .darklayout .inbox-email-menu-list .nav-tabs li a:focus, .darklayout .inbox-email-menu-list .nav-tabs li a:active, .darklayout .mail-title h2, .darklayout .compose-email-to, .darklayout .compose-multiple-email, .darklayout .download-custom h2, .darklayout .adminpro-cloud-computing-down:before, .darklayout .adminpro-form .checkbox, .darklayout .login-textarea-area .contact-message, .darklayout .main-title-hd h3, .darklayout .view-author-mail span, .darklayout .view-mail-content h3, .darklayout .view-mail-content p, .darklayout .all-attachment-area ul.attachment-menu-view li a, .darklayout .file-type-view p, .darklayout .view-file-in i, .darklayout .user-profile-comment-content p, .darklayout .profile-time-ds-none, .darklayout .btn-group-vertical>.btn.active, .darklayout .btn-group-vertical>.btn:active, .darklayout .btn-group-vertical>.btn:focus, .darklayout .btn-group-vertical>.btn:hover, .darklayout .btn-group>.btn.active, .darklayout .btn-group>.btn:active, .darklayout .btn-group>.btn:focus, .darklayout .btn-group>.btn:hover, .darklayout .review-title span, .darklayout .custom-menu-content ul.main-menu-dropdown li a, .darklayout .conversation-list .ctext-wrap i, .darklayout .conversation-list .ctext-wrap p, .darklayout #todo-message, .darklayout .checkbox label{
-	color: #fff;
-}
-.darklayout .chosen-container-multi .chosen-choices, .darklayout .select2-container--default .select2-selection--single, .darklayout .select2-dropdown, .darklayout .select2-container--default .select2-selection--multiple, .darklayout .login-input-area input[type="email"], .darklayout .login-input-area input[type="password"], .darklayout .login-input-area input, .darklayout .interested-input-area select, .darklayout .budget-input-area select[type="text"], .darklayout .interested-input-area select, .darklayout .budget-input-area select, .darklayout .login-textarea-area .contact-message, .darklayout .compose-multiple-email.compose-subject-email input[type="text"], .darklayout .images-action-pro .btn-warning, .darklayout .images-action-pro .btn-white, .darklayout .user-post-reply .btn{
-	background-color: #303030;
-	border: 1px solid #303030;
-}
-.darklayout .conversation-list .ctext-wrap:after{
-	border-right-color: #303030;
-}
-.darklayout .dropzone, .darklayout .user-profile-comment-list, .darklayout .border-table > thead > tr > th, .darklayout .tab-custon-menu-bg-style:before{
-	background-color: #303030;
-}
-.darklayout .user-profile-post, .darklayout .table-bordered, .darklayout .table-bordered>tbody>tr>td, .darklayout .table-bordered>tbody>tr>th, .darklayout .table-bordered>tfoot>tr>td, .darklayout .table-bordered>tfoot>tr>th, .darklayout .table-bordered>thead>tr>td, .darklayout .table-bordered>thead>tr>th, .darklayout .border-table{
-	border: 1px solid #303030;
-}
-.darklayout .static-table-list .table>thead>tr>th{
-	border-bottom: 1px solid #303030;
-}
-.darklayout .note-editor.note-frame .note-editing-area .note-editable, .darklayout .images-cropper-pro .btn-primary{
-	background-color: #303030;
-	border: 1px solid #303030;
-}
-.darklayout .panel-heading, .darklayout .note-editor.note-frame{
-	border: 1px solid #393939;
-}
-.darklayout .login-textarea-area .login-user{
-	border-left: 1px solid #393939;
-    border-bottom: 1px solid #393939;
-}
-.darklayout .login-input-area .login-user{
-	border: 1px solid #393939;
-}
-.darklayout .login-input-area #txtCompare{
-	background-color: #232121;
-	border: 1px solid #303030;
-	color: #fff;
-}
-.darklayout .chosen-container-multi .chosen-choices .search-choice{
-	background-color: #393939;
-    border: 1px solid #393939;
-	color: #fff;
-	background-image:none;
-}
-.darklayout .help-block{
-	color: #d6cece;
-}
-.darklayout .select2-container--default .select2-search--dropdown .select2-search__field, .darklayout .select2-container--default .select2-selection--multiple .select2-selection__choice{
-	background-color: #393939;
-    border: 1px solid #393939;
-}
-.darklayout .themesaller-forms label, .darklayout .themesaller-forms input, .darklayout .themesaller-forms button, .darklayout .themesaller-forms select, .darklayout .themesaller-forms textarea, .darklayout .input-mask-title label, .darklayout .input-mark-inner .help-block, .darklayout .data-custon-pick label, .darklayout .touchspin-inner label, .darklayout .datepicker.dropdown-menu th, .darklayout .datepicker.dropdown-menu td, .darklayout .analytics-sparkle-line .analytics-content h5, .darklayout .analytics-rounded .analytics-rounded-content h5, .darklayout .analysis-progrebar .analysis-progrebar-content h5, .darklayout .analytics-sparkle-line .analytics-content h2, .darklayout .analytics-rounded .analytics-rounded-content h2, .darklayout .analysis-progrebar .analysis-progrebar-content h2, .darklayout .analytics-adminpro .skill .progress .lead-content h3, .darklayout  .analysis-progrebar-content .small p, .darklayout .basic-login-inner h3, .darklayout .basic-login-inner p, .darklayout .form-group-inner label, .darklayout .inline-remember-me label, .darklayout .i-checks label, .darklayout .form-group-inner input[type="email"], .darklayout .form-group-inner input[type="password"], .darklayout .form-group-inner input[type="text"], .darklayout .form-select-list .custom-select-value, .darklayout .cart-group .radio, .darklayout .login-input-area input[type="email"], .darklayout .login-input-area input[type="password"], .darklayout .login-input-area input[type="text"], .darklayout .interested-input-area select, .darklayout .budget-input-area select[type="text"], .darklayout .interested-input-area select, .darklayout .budget-input-area select, .darklayout .code-editor-single h2, .darklayout .note, .darklayout .inbox-email-menu-list .nav-tabs li, .darklayout .note-editable.panel-body h2, .darklayout .note-editable.panel-body p, .darklayout .contact-client-content p, .darklayout .contact-client-content a, .darklayout .contact-client-address h3, .darklayout .contact-client-address .address-client-ct, .darklayout .contact-client-address p, .darklayout .editable-click, .darklayout a.editable-click, .darklayout a.editable-click:hover, .darklayout .popover-title, .darklayout .contact-img-v2 .contact-client-name, .darklayout .preview-img-pro-ad h4, .darklayout .preview-img-pro-ad p, .darklayout .images-action-pro .btn-warning, .darklayout .images-action-pro .btn-white, .darklayout .modal-bootstrap h2, .darklayout .modal-bootstrap p, .darklayout .adminpro-down-arrow-in-a-circle:before, .darklayout .form-group label, .darklayout .password-verdict, .darklayout .user-profile-content h2, .darklayout .user-profile-about h2, .darklayout .user-profile-content .profile-founder, .darklayout .user-profile-content .profile-des, .darklayout .user-profile-post-name a, .darklayout .user-profile-post-name p, .darklayout .profile-user-post-content p, .darklayout .user-profile-about p, .darklayout .user-profile-about span, .darklayout .user-post-reply .btn, .darklayout .user-profile-comment-input textarea, .darklayout .user-profile-contact ul.profile-contact-menu li a, .darklayout .admin-widget-flot-ch h1, .darklayout .admin-widget-flot-ch h3, .darklayout .admin-widget-flot-ch p, .darklayout .progress-circular4 p, .darklayout .progress-circular3 p, .darklayout .progress-circular2 p, .darklayout .progress-circular1 p, .darklayout .progress-circular1 h2, .darklayout .project-details-title h2, .darklayout .project-details-st, .darklayout .project-details-dt span, .darklayout .project-pregress-details span, .darklayout .project-details-descri h2, .darklayout .project-details-descri p, .darklayout .custon-tab-style1 p, .darklayout .jstree-anchor, .darklayout .author-per-content h2, .darklayout .author-per-content p{
-	color: #fff;
-}
-.darklayout .popover-title{
-	border-bottom: 1px solid #303030;
-}
-.darklayout .note-editable.panel-body p, .darklayout .note-editable.panel-body span{
-	color: #fff !important;
-}
-.darklayout .inbox-email-menu-list .nav-tabs li .count-inbox{
-	margin-left:100px;
-}
-.darklayout .datepicker thead tr:first-child th:hover, .darklayout .datepicker tfoot tr th:hover, .darklayout .datepicker table tr td.day:hover, .darklayout .datepicker table tr td.day.focused, .darklayout .datepicker table tr td span:hover, .darklayout .datepicker table tr td.range, .darklayout .analytics-adminpro, .darklayout .analytics-sparkle-line, .darklayout .analytics-rounded, .darklayout .analysis-progrebar, .darklayout .charts-single-pro, .darklayout .notification-list, .darklayout .button-ad-wrap, .darklayout .tinymce-single, .darklayout .x-editable-list, .darklayout .pdf-single-pro, .darklayout .code-editor-single, .darklayout .custom-inbox-message, .darklayout .inbox-email-menu-list, .darklayout li.multipleInput-email, .darklayout .single-skill, .darklayout .contact-client-single, .darklayout .user-profile-wrap, .darklayout .user-profile-about, .darklayout .user-profile-post, .darklayout .user-profile-mutual-friends, .darklayout .project-details-wrap, .darklayout .project-details-descri, .darklayout .project-details-files, .darklayout .popover, .darklayout .popover-title, .darklayout .modal-bootstrap, .darklayout .dropzone-custom-sys, .darklayout .dropzone-pro, .darklayout .preloader-single, .darklayout .user-profile-comment-input textarea, .darklayout .comment-replay-profile .btn-white, .darklayout .widget-flot-bg, .darklayout .menu-list-wrap, .darklayout .custon-tab-style1, .darklayout .author-permissio-wrap, .darklayout .card-box{
-	background-color: #393939;
-} 
-.darklayout li.multipleInput-email{
-	border: 1px #393939 solid;
-}
-.darklayout .contact-client-footer .btn-group a{
-	border: 1px #303030 solid;
-	background-color: #303030;
-	color: #fff;
-}
-.darklayout .admin-check-sucess, .darklayout .admin-check-pro, .darklayout .alert-success-style1:before, .darklayout .alert-success-style2:before, .darklayout .alert-success-style3:before, .darklayout .alert-success-style4:before{
-	background: #444242;
-}
-.darklayout .admin-check-pro, .darklayout .admin-check-sucess:after, .darklayout .admin-check-pro:after{
-	border-left-color: #444242;
-}
-.darklayout .table-striped>tbody>tr:nth-of-type(odd), .darklayout .table-striped>tbody>tr:nth-of-type(odd){
-	background-color: #303030;
-}
-.darklayout .sparkle-table>tbody>tr:nth-of-type(odd){
-	background-color: #303030;
-}
-.darklayout .note-editor.note-frame .note-statusbar .note-resizebar{
-	background-color: #303030;
-}
-.darklayout .progress-circular4 p{
-	font-size:12px;
-}
-.materialdesign .widget-text-box p{
-	font-size:13px;
-}
-.des-none{
-	display:none;
-}
-.small-dn{
-	display:block;
-}
-.logo-wrap-pro{
-	display:none;
-}
-.materialdesign .breadcome-heading h2{
-	margin:0px;
-}
-.materialdesign #sidebar .sidebar-header{
-	background: #303030;
-}
-.materialdesign .footer-copyright-area{
-	background: #fff;
-	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-}
-.materialdesign #sidebar{
-	background: #303030;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-}
-.materialdesign .sidebar-header h3, .materialdesign #sidebar .sidebar-header strong, .materialdesign .sidebar-header p, .materialdesign .footer-copy-right p, .materialdesign .footer-copy-right a{
-	color: #fff;
-}
-.materialdesign .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:hover, .materialdesign .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:focus, .materialdesign .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:active, .materialdesign .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:visited{
-	color: #fff;
-}
-.materialdesign .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a, .materialdesign .adminpro-custon-design .panel-heading, .materialdesign .adminpro-custon-design .admin-panel-content p{
-	color: #fff;
-}
-.materialdesign .header-top-area, .materialdesign .fixed-header-top{
-	background: #3bafda;
-}
-.materialdesign .header-top-menu .navbar-nav>li .dropdown-menu, .materialdesign .header-right-info ul.header-right-menu li .author-message-top, .materialdesign .header-right-info ul.header-right-menu li .notification-author, .materialdesign .header-right-info ul.header-right-menu li .author-log, .materialdesign .header-right-info ul.header-right-menu li .admintab-wrap.menu-setting-wrap.menu-setting-wrap-bg.dropdown-menu{
-	background: #3a9dc2;
-}
-.materialdesign .header-right-info .author-message-top:before, .materialdesign .header-right-info .notification-author:before{
-	border-bottom: 10px solid #3a9dc2;
-}
-.materialdesign .header-top-menu .navbar-nav>li .dropdown-menu a:hover, .materialdesign .header-right-info ul.header-right-menu li .dropdown-header-top.author-log li a:hover, .materialdesign  .header-right-info ul.header-right-menu li .dropdown-header-top.author-log li a:focus, .materialdesign  .header-drl-controller-btn.btn-info:active:focus, .btn-info:active:hover{
-    background: #3bafda;
-	border-color: #3bafda;
-}
-.materialdesign .header-drl-controller-btn.btn-info {
-    background-color: #3bafda;
-    border-color: #3bafda;
-}
-.materialdesign .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:hover, .materialdesign .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:focus, .materialdesign .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:active, .materialdesign .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:visited{
-	background: #3bafda;
-}
-.materialdesign .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .left-menu-dropdown{
-	background: #3bafda;
-}
-.materialdesign .flot-tick-label.tickLabel, .materialdesign .legend > div{
-	color: #fff;
-}
-.materialdesign .message-single-top h1, .materialdesign .notification-single-top h1{
-	border-bottom: 1px solid #3bafda;
-}
-.materialdesign .header-right-info ul.header-right-menu li .message-view a, .materialdesign .header-right-info ul.header-right-menu li .notification-view a{
-	border-top: 1px solid #3bafda;
-}
-.materialdesign .menu-setting-wrap.menu-setting-wrap-bg .nav-tabs>li.active>a, .materialdesign .menu-setting-wrap.menu-setting-wrap-bg .nav-tabs>li.active>a:focus, .materialdesign .menu-setting-wrap.menu-setting-wrap-bg .nav-tabs>li.active>a:hover .notes-img{
-	background: #3a9dc2;
-}
-.materialdesign .breadcome-heading .form-control, .breadcome-heading .form-control:focus {
-    border: 1px solid #ececec;
-    font-size: 13px;
-    height: 34px;
-    color: #303030;
-    padding-left: 20px;
-    padding-right: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: none;
-    border-radius: 30px;
-    width: 200px;
-}
-.materialdesign .breadcome-heading a {
-    position: absolute;
-    top: 0px;
-    left: 178px;
-    display: block;
-    height: 34px;
-    line-height: 34px;
-    width: 34px;
-    text-align: center;
-    color: #999;
-}
-.materialdesign ul.breadcome-menu {
-    padding-top: 8px;
-}
-.materialdesign .custom-datatable-overright table tbody tr td{
-	padding-right: 0px !important;
-}
-.materialdesign .mg-b-15, .materialdesign .materialdesign-alert{
-	margin-bottom:15px;
-}
-.materialdesign .adminpro-custon-design .panel-heading{
-	background: #dcdcdc;
-}
-.materialdesign .adminpro-custon-design .admin-panel-content{
-	background: #ebebeb;
-}
-.materialdesign .knob-single input{
-	position: absolute;
-    top: 0px;
-    right: 34px;
-}
-.materialdesign .inbox-email-menu-list .nav-tabs li .count-inbox{
-	margin-left: 100px;
-}
-.materialdesign .nav-tabs.custom-menu-wrap li a{
-	color: #303030;
-}
-.materialdesign .nav-tabs.custom-menu-wrap li a:hover{
-	color: #fff;
-}
-.materialdesign .progress-circular4 p{
-	font-size:12px;
-}
-.materialdesign .footer-copy-right p, .materialdesign .footer-copy-right a{
-	color:#333;
 }

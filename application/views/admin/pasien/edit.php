@@ -1,6 +1,6 @@
 
 <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#edit-<?= $kd_alternatif; ?>">
-    <i class="fa fa-edit"></i> Edit(undone)
+    <i class="fa fa-edit"></i> Edit
 </button>
 
 <div id="edit-<?= $kd_alternatif; ?>" class="modal modal-adminpro-general modal-zoomInDown fade" role="dialog">
@@ -18,7 +18,7 @@
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="all-form-element-inner">
-                                                    <?= form_open(base_url('admin/peternak/edit_klp_ternak')); ?>
+                                                    <?= form_open(base_url('admin/pasien/edit_klp_ternak')); ?>
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-9">

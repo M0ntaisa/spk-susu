@@ -29,7 +29,7 @@
                 {
                     label: " Orders",
                     data: data3,
-                    color: "#fff",
+                    color: "#000",
                     bars: {
                         show: true,
                         align: "center",
@@ -74,19 +74,19 @@
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Arial',
                     axisLabelPadding: 10,
-                    color: "#fff"
+                    color: "#d8d8d8"
                 },
                 yaxes: [{
                     position: "left",
                     max: 1070,
-                    color: "#fff",
+                    color: "#d8d8d8",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: 'Arial',
                     axisLabelPadding: 3
                 }, {
                     position: "right",
-                    clolor: "#fff",
+                    clolor: "#d8d8d8",
                     axisLabelUseCanvas: true,
                     axisLabelFontSizePixels: 12,
                     axisLabelFontFamily: ' Arial',
@@ -95,7 +95,7 @@
                 ],
                 legend: {
                     noColumns: 1,
-                    labelBoxBorderColor: "#fff",
+                    labelBoxBorderColor: "#303030",
                     position: "nw"
                 },
                 grid: {

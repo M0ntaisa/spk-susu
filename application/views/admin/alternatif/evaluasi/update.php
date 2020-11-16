@@ -32,7 +32,7 @@
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-2">
-                                                                    <label class="login2 pull-right pull-right-pro">Suplier</label>
+                                                                    <label class="login2 pull-right pull-right-pro">Pasien</label>
                                                                 </div>
                                                                 <div class="col-lg-10">
                                                                     <input type="text" class="form-control" id="suplier" name="suplier" value="<?= $row['nm_suplier'] ?>"/>

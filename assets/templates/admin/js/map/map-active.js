@@ -7,7 +7,7 @@
                     name: "world_countries",
                     defaultArea: {
                         attrs: {
-                            stroke: "#000",
+                            stroke: "#fff",
                             "stroke-width": 1
                         }
                     }

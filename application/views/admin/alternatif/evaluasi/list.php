@@ -111,7 +111,7 @@
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
-                                                    <th>Nama Suplier</th>
+                                                    <th>Nama Pasien</th>
                                                     <th>Harga</th>
                                                     <th>Kualitas</th>
                                                     <th>Kuantitans</th>

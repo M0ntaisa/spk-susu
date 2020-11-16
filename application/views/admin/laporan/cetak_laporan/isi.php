@@ -96,7 +96,7 @@
             <thead>
             <tr></tr>
                 <tr>
-                    <th>Nama Suplier</th>
+                    <th>Nama Pasien</th>
                     <th style="text-align:center;">Nilai Akhir</th>
                     <th style="text-align:center;">Peringkat</th>
                 </tr>

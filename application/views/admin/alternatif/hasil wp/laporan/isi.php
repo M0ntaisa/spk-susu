@@ -94,7 +94,7 @@
         <table class="table table-bordered" id="example3" align="center">
             <thead>
                 <tr>
-                    <th>Nama Suplier</th>
+                    <th>Nama Pasien</th>
                     <th align="center">Nilai Akhir</th>
                     <th align="center">Peringkat</th>
                 </tr>

@@ -38,7 +38,7 @@
                                                 <tr>
                                                     <th>#</th>
                                                     <th>Jenis Material</th>
-                                                    <th>Nama Suplier</th>
+                                                    <th>Nama Pasien</th>
                                                     <th>Vektor V</th>
                                                     <th width="270px;">Aksi</th>
                                                 </tr>

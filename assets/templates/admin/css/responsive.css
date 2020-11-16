@@ -166,17 +166,10 @@ ul.message-list-menu li .message-info {
 .widget-ov-mg-t-l-30{
 	margin-top: 30px;
 }
-.tabl-d-n{
-	display:none;
-}
-.darklayout .knob-single input {
-	right: 130px;
-}
 }
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-
 .header-top-menu{
 	display:none;
 }
@@ -399,45 +392,6 @@ ul.message-list-menu li .message-info {
 }
 .progress-circular4, .progress-circular3, .progress-circular2, .progress-circular1 {
 	text-align: center;
-}
-/* Dark Layout Css */
-.left-sidebar-pro{
-	display:none;
-}
-.wrapper-pro{
-	display:block;
-}
-#sidebarCollapse{
-	display:none;
-}
-.fixed-header-top{
-	position:relative;
-}
-.des-none{
-	display:block;
-}
-.small-dn{
-	display:none;
-}
-ul.message-list-menu li .message-time {
-	float: right;
-}
-.logo-wrap-pro{
-	display:block;
-}
-.mini-navbar .content-inner-all {
-    margin-left: 0px;
-	transition: all 0.3s;
-}
-.content-inner-all {
-    margin-left: 0px;
-	transition: all 0.3s;
-}
-.fixed-header-top {
-	left: 0px;
-}
-.darklayout .knob-single input {
-	right: 120px;
 }
 }
 
@@ -788,79 +742,6 @@ ul.message-list-menu li .message-info {
 .progress-circular4, .progress-circular3, .progress-circular2, .progress-circular1 {
 	text-align: center;
 }
-/* Dark Layout Css */
-.left-sidebar-pro{
-	display:none;
-}
-.wrapper-pro{
-	display:block;
-}
-#sidebarCollapse{
-	display:none;
-}
-.fixed-header-top{
-	position:relative;
-}
-.des-none{
-	display:block;
-}
-.small-dn{
-	display:none;
-}
-.breadcome-heading h2 {
-	font-size: 18px;
-}
-ul.message-list-menu li .message-time {
-	width: 20%;
-	float: right;
-}
-#sparklinedask1 {
-	text-align: center;
-}
-.dashone-doughnut {
-	text-align: center;
-}
-.dash-adminpro-project-title {
-	text-align: center;
-}
-.project-dashone-phara {
-	text-align: center;
-}
-.logo-wrap-pro{
-	display:block;
-}
-.icon-date-timeline {
-	border-right: 0px solid #ccc;
-}
-.timeline-content {
-	border-left: 0px solid #ccc;
-	text-align:center;
-}
-.bs-bars.pull-left, .fixed-table-toolbar .columns {
-	width: 100%;
-	text-align:center;
-}
-.datatable-dashv1-list .pull-right {
-	width: 100%;
-	text-align:center;
-}
-.mini-navbar .content-inner-all {
-    margin-left: 0px;
-	transition: all 0.3s;
-}
-.content-inner-all {
-    margin-left: 0px;
-	transition: all 0.3s;
-}
-.fixed-header-top {
-	left: 0px;
-}
-.darklayout .knob-single input {
-	right: 120px;
-}
-.mobile-menu-area{
-	display:block;
-}
 }
  
 /* Large Mobile :480px. */
@@ -924,9 +805,6 @@ ul.message-list-menu li .message-info {
 }
 .view-mail-ov-d-n{
 	display:none;
-}
-.darklayout .knob-single input {
-	right: 240px;
 }
 }
  

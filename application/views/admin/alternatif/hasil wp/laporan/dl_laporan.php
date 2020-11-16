@@ -54,12 +54,12 @@ p {
 
 <table>
     <tr>
-        <th>Nama Suplier</th>
+        <th>Nama Pasien</th>
         <th>Nilai Akhir</th>
         <th>Peringkat</th>
     </tr>
     <tr>
-        <td>Suplier-n</td>
+        <td>Pasien-n</td>
         <td>Nilai-n</td>
         <td>Peringkat-n</td>
     </tr>

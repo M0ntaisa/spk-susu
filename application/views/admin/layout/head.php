@@ -1,8 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="en">
 
-<head>
-    <meta charset="utf-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?= $title; ?></title>
     <meta name="description" content="">
@@ -35,31 +35,49 @@
 		============================================ -->
     <link rel="stylesheet" href="<?= base_url(); ?>assets/templates/admin/css/data-table/bootstrap-table.css">
     <link rel="stylesheet" href="<?= base_url(); ?>assets/templates/admin/css/data-table/bootstrap-editable.css">
-    <!-- modals CSS
-		============================================ -->
-    <link rel="stylesheet" href="<?= base_url(); ?>assets/templates/admin/css/modals.css">
     <!-- normalize CSS
 		============================================ -->
     <link rel="stylesheet" href="<?= base_url(); ?>assets/templates/admin/css/normalize.css">
-    <!-- select2 CSS
-		============================================ -->
-    <link rel="stylesheet" href="<?= base_url(); ?>assets/templates/admin/css/select2/select2.min.css">
     <!-- charts C3 CSS
 		============================================ -->
     <link rel="stylesheet" href="<?= base_url(); ?>assets/templates/admin/css/c3.min.css">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="<?= base_url(); ?>assets/templates/admin/css/animate.css">
+    <!-- modals CSS
+		============================================ -->
+    <link rel="stylesheet" href="<?= base_url(); ?>assets/templates/admin/css/modals.css">
+    <!-- tabs CSS
+		============================================ -->
+    <link rel="stylesheet" href="<?= base_url(); ?>assets/templates/admin/css/tabs.css">
     <!-- forms CSS
 		============================================ -->
     <link rel="stylesheet" href="<?= base_url(); ?>assets/templates/admin/css/form/all-type-forms.css">
+    <!-- switcher CSS
+		============================================ -->
+    <link rel="stylesheet" href="<?= base_url(); ?>assets/templates/admin/css/switcher/color-switcher.css">
     <!-- style CSS
 		============================================ -->
     <link rel="stylesheet" href="<?= base_url(); ?>assets/templates/admin/style.css">
     <!-- responsive CSS
 		============================================ -->
     <link rel="stylesheet" href="<?= base_url(); ?>assets/templates/admin/css/responsive.css">
-    <!-- Lightbox
-		============================================ -->
-    <link rel="stylesheet" href="<?= base_url(); ?>assets/templates/admin/lightbox2-2.11.1/dist/css/lightbox.min.css">
     <!-- modernizr JS
 		============================================ -->
     <script src="<?= base_url(); ?>assets/templates/admin/js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- Lightbox
+		============================================ -->
+    <link rel="stylesheet" href="<?= base_url(); ?>assets/templates/admin/lightbox2-2.11.1/dist/css/lightbox.min.css">
+    <!-- Color Css Files
+		============================================ -->
+    <link rel="alternate stylesheet" type="text/css" href="<?= base_url(); ?>assets/templates/admin/css/switcher/color-one.css" title="color-one" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="<?= base_url(); ?>assets/templates/admin/css/switcher/color-two.css" title="color-two" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="<?= base_url(); ?>assets/templates/admin/css/switcher/color-three.css" title="color-three" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="<?= base_url(); ?>assets/templates/admin/css/switcher/color-four.css" title="color-four" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="<?= base_url(); ?>assets/templates/admin/css/switcher/color-five.css" title="color-five" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="<?= base_url(); ?>assets/templates/admin/css/switcher/color-six.css" title="color-six" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="<?= base_url(); ?>assets/templates/admin/css/switcher/color-seven.css" title="color-seven" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="<?= base_url(); ?>assets/templates/admin/css/switcher/color-eight.css" title="color-eight" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="<?= base_url(); ?>assets/templates/admin/css/switcher/color-nine.css" title="color-nine" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="<?= base_url(); ?>assets/templates/admin/css/switcher/color-ten.css" title="color-ten" media="screen" />
 </head>
