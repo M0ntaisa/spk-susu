@@ -133,7 +133,7 @@
                                                                     <div class="col-lg-5">
                                                                         <div class="login-horizental cancel-wp pull-left">
                                                                             <button class="btn btn-white" data-dismiss="modal" type="button">Batal</button>
-                                                                            <button class="btn btn-sm btn-primary login-submit-cs" type="submit">Simpan</button>
+                                                                            <button class="btn btn-sm btn-warning login-submit-cs" type="submit" style="background-color: orange;border-color:orange;">Ubah</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>

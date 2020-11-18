@@ -217,9 +217,9 @@
                                         <tr>
                                             <th>#</th>
                                             <th>Kode</th>
-                                            <th>Nama Kelompok Ternak</th>
+                                            <!-- <th>Nama Kelompok Ternak</th>
                                             <th>Alamat</th>
-                                            <th>Telepon</th>
+                                            <th>Telepon</th> -->
                                             <!-- <th>Surat Usaha</th> -->
                                             <th width="150px">Aksi</th>
                                         </tr>
@@ -229,9 +229,9 @@
                                         <tr>
                                             <td><?= $x++; ?></td>
                                             <td><?= $row['kd_alternatif']; ?></td>
-                                            <td><?= $row['nama']; ?></td>
+                                            <!-- <td><?= $row['nama']; ?></td>
                                             <td><?= $row['alamat']; ?></td>
-                                            <td><?= $row['telepon']; ?></td>
+                                            <td><?= $row['telepon']; ?></td> -->
                                             <!-- <td><a href="<?= base_url('assets/upload/image/surat_usaha/'.$row[0]['surat_usaha']); ?>" data-lightbox='image-<?= $x ?>' data-title="Surat Usaha dari Pasien <?= $row[0]['nm_suplier'] ?>"><img src="<?= base_url('assets/upload/image/surat_usaha/thumbs/'.$row[0]['surat_usaha']); ?>" alt="Surat Usaha Tidak Ada" class="img img-responsive img-thumbnail" width="60"></a></td> -->
                                             <td>
                                                 <?php $kd_alternatif = $row['kd_alternatif'] ?>

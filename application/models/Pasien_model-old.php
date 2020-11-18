@@ -9,23 +9,6 @@ class Pasien_model extends CI_Model {
         return $this->db->get('tb_alternatif')->result_array();
     }
 
-    // get kd & nama klp
-    public function getKdNama()
-    {
-        $query = $this->db->query("SELECT kd_alternatif, nama
-                FROM tb_alternatif
-                ORDER BY id_alternatif ASC
-            ");
-
-        return $query->result_array();
-    }
-
-    // get kd & nama klp
-    public function getEachKdNama($kd_alternatif)
-    {
-        return $this->db->select('*')->from('tb_alternatif')->where('kd_alternatif', $kd_alternatif)->get()->result_array();
-    }
-
     // Fungsi tambah kelompok ternak
     public function tambahKelpTernak($data, $kd_subkriteria)   
     {
@@ -59,36 +42,6 @@ class Pasien_model extends CI_Model {
         }
         
         
-    }
-
-    // fungsi edit kelompok Ternak
-    public function editPasien($data, $kd_subkriteria)
-    {
-        $this->db->where('kd_alternatif', $data['kd_alternatif']);
-        $update = $this->db->update('tb_alternatif', $data);
-        if ($update) {
-            // mengambil data kriteria dalam database
-            $kriteria = $this->db->select('id_kriteria')->from('tb_kriteria')->get()->result_array();
-            // membuat array data evaluasi
-            $data_eval = array();
-            // menyusun data kriteria, material dan kelompok ternak dalam 1 array
-            for ($j=0; $j < count($kriteria) ; $j++) { 
-                $x = array (
-                    'kd_alternatif'    =>  $data['kd_alternatif'],
-                    'id_kriteria'   =>  $kriteria[$j]['id_kriteria'],
-                    'kd_subkriteria'=>  $kd_subkriteria[$j]
-                );
-                $data_eval[] = $x; 
-            }
-
-            // menghapus data suplier sebelum diinput pada table evaluasi
-            $this->db->where('kd_alternatif', $data['kd_alternatif']);
-            $delete = $this->db->delete('tb_evaluasi');
-            // memasukkan semua data dalam array ke dalam tb_evaluasi
-            if ($delete) {
-                $this->db->insert_batch('tb_evaluasi', $data_eval);
-            }
-        }
     }
 
     // fungsi hapus kelp ternak

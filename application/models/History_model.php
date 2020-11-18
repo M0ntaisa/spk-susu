@@ -5,37 +5,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class History_model extends CI_Model {
 
-    public function insertHistory($kd_material, $data_wp)
+    public function insertHistory($history, $detail_history)
     {
-        // kode history
-        $a = '';
-        for ($i = 0; $i<3; $i++) 
-        {
-            $a .= mt_rand(0,9);
-        }
-        $kd_history = "HS00".$a;
+        
+        //Cek apakah ada history dengan Kode sama
+        $filter = $this->db->select('*')->from('tb_history')->where('kd_history', $history['kd_history'])->get()->num_rows();
+        if ($filter < 1) {
 
-        $history = array();
-        for ($i=0; $i < count($data_wp); $i++) { 
-            $rank = $i+1;
-            $history[$i]['kd_history'] = $kd_history;
-            $history[$i]['kd_material'] = $kd_material;
-            $history[$i]['kd_suplier'] = $data_wp[$i]['kd_suplier'];
-            $history[$i]['nm_suplier'] = $data_wp[$i]['nm_suplier'];
-            $history[$i]['vektor_v'] = $data_wp[$i]['vektor_v'];
-            $history[$i]['rank'] = "Rank $rank";
-        }
-        // echo "<pre>";
-        // print_r($history);exit;
-        $this->db->where('kd_material', $kd_material);
-        $this->db->delete('tb_history');
-
-        if ($history == null) {
-            // set flashdata
-            $this->session->set_flashdata('warning', 'Tidak ada suplier yang menyuplai material yang anda pilih.');
-            redirect(base_url('admin/alternatif/hasil_wp'));
+            $insert = $this->db->insert('tb_history', $history);
+            if ($insert) {
+                // memasukkan semua data dalam array ke dalam tb_detail_history
+                $this->db->insert_batch('tb_detail_history', $detail_history);
+            } else {
+               // set flashdata
+                $this->session->set_flashdata('warning', 'Terjadi Kesahalan Saat Insert Detail History.');
+                redirect(base_url('admin/algoritma'));
+            }
+            
         } else {
-            $batch = $this->db->insert_batch('tb_history', $history);
+            // set flashdata
+            $this->session->set_flashdata('warning', 'Data History Dobel.');
+            redirect(base_url('admin/algoritma'));
         }
         
     }
@@ -43,20 +33,48 @@ class History_model extends CI_Model {
     // mengambil history yang rank 1
     public function getHistoryByRank()
     {
-        $this->db->select('*,tb_material.nama_material');
-        $this->db->from('tb_history');
-        $this->db->where('rank', 'Rank 1');
-        $this->db->join('tb_material', 'tb_history.kd_material = tb_material.kd_material', 'left');
+        $query = $this->db->query("SELECT
+        tb_history.id_history,
+        tb_history.kd_history,
+        tb_history.time_proc,
+        tb_detail_history.kd_alternatif,
+        tb_alternatif.nama,
+        tb_detail_history.point
+        FROM
+        tb_history
+        INNER JOIN tb_detail_history ON tb_detail_history.kd_history = tb_history.kd_history
+        INNER JOIN tb_alternatif ON tb_alternatif.kd_alternatif = tb_detail_history.kd_alternatif
+        WHERE
+        tb_detail_history.rank = '1'
+        ORDER BY
+        tb_history.id_history ASC
+        ");
         
-        
-        $query = $this->db->get();
         return $query->result_array();
     }
 
-    // mengambil history berdasarkan jenis material
-    public function getHistoryByMaterial($kd_material)
+    // mengambil history berdasarkan alternatif
+    public function getEachHistory($kd_alternatif)
     {
-        return $this->db->select('*')->from('tb_history')->where('kd_material', $kd_material)->get()->result_array();
+        $query = $this->db->query("SELECT
+        tb_history.id_history,
+        tb_history.kd_history,
+        tb_history.time_proc,
+        tb_detail_history.kd_alternatif,
+        tb_alternatif.nama,
+        tb_detail_history.point,
+        tb_detail_history.rank
+        FROM
+        tb_history
+        INNER JOIN tb_detail_history ON tb_detail_history.kd_history = tb_history.kd_history
+        INNER JOIN tb_alternatif ON tb_alternatif.kd_alternatif = tb_detail_history.kd_alternatif
+        WHERE
+        tb_detail_history.kd_alternatif = '$kd_alternatif'
+        ORDER BY
+        tb_history.id_history ASC
+        ");
+        
+        return $query->result_array();
         
     }
 

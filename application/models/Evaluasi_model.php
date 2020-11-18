@@ -5,51 +5,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Evaluasi_model extends CI_Model {
 
     // fungsi get data evaluasi dengan kd_suplier
-    public function getDataEvalHarga($kd_suplier)
+    public function getDataEval($kd_alternatif, $id_kriteria)
     {
         $query = $this->db->query("SELECT
-        tb_evaluasi.id_evaluasi,
-        tb_evaluasi.kd_material,
-        tb_evaluasi.kd_kriteria,
-        tb_evaluasi.kd_suplier,
-        tb_evaluasi.nilai,
-        tb_material.nama_material,
-        tb_kriteria.nm_kriteria,
-        tb_subkriteria.`value`,
-        tb_subkriteria.ket
+        kd_subkriteria
         FROM
         tb_evaluasi
-        INNER JOIN tb_material ON tb_evaluasi.kd_material = tb_material.kd_material
-        INNER JOIN tb_kriteria ON tb_evaluasi.kd_kriteria = tb_kriteria.kd_kriteria
-        INNER JOIN tb_subkriteria ON tb_subkriteria.kd_kriteria = tb_kriteria.kd_kriteria AND tb_subkriteria.kd_material = tb_material.kd_material
         WHERE
-        tb_evaluasi.kd_suplier = '$kd_suplier'AND tb_evaluasi.kd_kriteria = 'krt-001'
+        tb_evaluasi.kd_alternatif = '$kd_alternatif' AND tb_evaluasi.id_kriteria = '$id_kriteria'
         ORDER BY
         tb_evaluasi.id_evaluasi ASC
         ");
-        return $query->result_array();
+        return $query->row_array();
     }
 
     // fungsi get data evaluasi dengan kd_suplier
-    public function getDataEvalKualitas($kd_suplier)
+    public function getEvalEachAlt($kd_alternatif)
     {
         $query = $this->db->query("SELECT
         tb_evaluasi.id_evaluasi,
-        tb_evaluasi.kd_material,
-        tb_evaluasi.kd_kriteria,
-        tb_evaluasi.kd_suplier,
-        tb_evaluasi.nilai,
-        tb_material.nama_material,
+        tb_evaluasi.kd_subkriteria,
+        tb_subkriteria.kd_kriteria,
         tb_kriteria.nm_kriteria,
-        tb_subkriteria.`value`,
-        tb_subkriteria.ket
+        tb_subkriteria.nm_subkriteria
         FROM
         tb_evaluasi
-        INNER JOIN tb_material ON tb_evaluasi.kd_material = tb_material.kd_material
-        INNER JOIN tb_kriteria ON tb_evaluasi.kd_kriteria = tb_kriteria.kd_kriteria
-        INNER JOIN tb_subkriteria ON tb_subkriteria.kd_kriteria = tb_kriteria.kd_kriteria AND tb_subkriteria.kd_material = tb_material.kd_material
+        INNER JOIN tb_subkriteria ON tb_subkriteria.kd_subkriteria = tb_evaluasi.kd_subkriteria
+        INNER JOIN tb_kriteria ON tb_kriteria.kd_kriteria = tb_subkriteria.kd_kriteria
         WHERE
-        tb_evaluasi.kd_suplier = '$kd_suplier'AND tb_evaluasi.kd_kriteria = 'krt-002'
+        tb_evaluasi.kd_alternatif = '$kd_alternatif'
         ORDER BY
         tb_evaluasi.id_evaluasi ASC
         ");

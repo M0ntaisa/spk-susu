@@ -11,7 +11,7 @@ class Algoritma_model extends CI_Model {
                 FROM tb_evaluasi 
                 INNER JOIN tb_subkriteria ON tb_evaluasi.kd_subkriteria = tb_subkriteria.kd_subkriteria
                 ORDER BY
-                tb_evaluasi.kd_alternatif ASC,
+                tb_evaluasi.id_evaluasi ASC,
                 tb_evaluasi.id_kriteria ASC
                 ");
 
